@@ -28,7 +28,7 @@ function fibsRec(num) {
         return [0, 1];
     } else {
         let result = fibsRec(num - 1);
-        result.push(fibsRec(num - 1).at(-1) + fibsRec(num - 2).at(-1));
+        result.push(result.at(-1) + fibsRec(num - 2).at(-1));
 
         return result;
     }

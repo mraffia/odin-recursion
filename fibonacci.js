@@ -5,7 +5,6 @@ function fibs(num) {
         return [0, 1];
     } else {
         let result = [0, 1];
-
         for (let i = 1; i < num - 1; i++) {
             let before = result[i];
             let beforeTwo = result[i - 1];
